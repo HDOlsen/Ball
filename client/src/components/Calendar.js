@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
-import MemberList from './MemberList';
 import CourtList from './CourtList';
+import '../style.css'
 
 export default class Calendar extends Component {
 
@@ -10,6 +10,14 @@ export default class Calendar extends Component {
         this.state = {
           court: {}
         }
+
+        console.log(props)
+
+   
+      }
+
+      componentWillReceiveProps(nextProps){
+          console.log(nextProps)
       }
     
       componentWillMount() {
@@ -40,11 +48,11 @@ export default class Calendar extends Component {
         return (
            
 <div className="container" id="formContainer">
-    <div className="card card-body">
-    <h4 className="card-title">Reserve a Court</h4>
+    <div className="card reservecard card-body">
+    <h4 className="card-title mx-auto">Reserve a Court</h4>
                     <div className="form">
                     <div className="row">
-                    <div className="form-group">
+                    <div className="form-group ml-5 mt-4">
                         <label>Court:</label>
                             <select type="integer" onChange={this.handleTextChange} name="court">
                                     <option value="1">One</option>
@@ -53,6 +61,7 @@ export default class Calendar extends Component {
                                     <option value="4">Four</option>
                             </select>
                     </div>
+                <div className="d-flex flex-col ml-3">
                     <div className="col">
                     <label>Date Requested:</label>
                         <input type="date" onChange={this.handleTextChange} min="2018-08-23" className="form-control" name="date" required></input>
@@ -69,18 +78,15 @@ export default class Calendar extends Component {
                      <label>Member ID:</label>
                         <input type="integer" onChange={this.handleTextChange} className="form-control" placeholder="Enter membership ID" name="memberId" required></input>
                     </div>
+                </div>
                     <br></br>
                     <div>
-                        <button className='btn btn-primary' onClick= {this.onSaveCourt}>Submit</button>
+                        <button className='btn btn-success mt-4 ml-3' id="rcorners1" onClick= {this.onSaveCourt}>Submit</button>
                     </div>
-                    <div>
-                        <input type="reset" value="Clear" className='btn btn-primary'></input>
-                </div>
             </div>
         </div>
     </div>
-    <CourtList />
-    <MemberList />
+    <CourtList {...this.props} />
 </div>
 
 

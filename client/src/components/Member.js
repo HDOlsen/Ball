@@ -42,7 +42,7 @@ export default class Member extends Component {
     return (
         <div className="container" id="formContainer">
         <div className="card card-body">
-            <h4 className="card-title">Member Profile</h4>
+            <h4 className="card-title mx-auto">Member Profile</h4>
         <div className="form">
           <div className="row">
             <div className="col">
@@ -94,7 +94,7 @@ export default class Member extends Component {
               <input className="form-control" onChange={this.handleTextChange} type="url" name="photo" placeholder="Upload file"></input>
             </div>
               <div>
-              <button className='btn btn-primary' onClick= {this.onSaveMember}><Link to = {'/'}>Submit</Link></button>
+              <button className='btn btn-success' onClick= {this.onSaveMember}><Link id="white" to = {'/'}>Submit</Link></button>
               </div>
     </div>
 </div>

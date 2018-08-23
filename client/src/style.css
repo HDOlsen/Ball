@@ -1,0 +1,80 @@
+.login {
+    background-image: url("tenniscourt.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120%;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.registered {
+    background-image: url("bluecourt.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120%;
+    font-family: "Roboto", sans-serif;
+    margin:0
+  }
+  
+  body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bar {
+  background-image: url("tennislawn.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 120%;
+  font-family: "Roboto", sans-serif;
+  margin:0
+}
+
+.bar, .sidebar {
+  height: 100%;
+  margin: 0;
+}
+
+.member{
+  height: 200px;
+}
+
+.membercard{
+  border-radius: 15px;
+  border: 2px solid #73AD21;
+  text-align: center;
+  height: 180px;
+  width:100px;
+}
+
+.membercard img {
+  border-radius: 10%;
+  height: 290px
+}
+
+.memberclass{
+
+width: 800px;
+text-align: center;
+}
+
+
+.reservecard{
+    border-radius: 30px;
+    border: 2px solid #73AD21;
+    padding: 10px; 
+    font-size: 20px;
+}
+
+.courtcard{
+
+  width: 200px;
+
+}

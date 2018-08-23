@@ -26,3 +26,175 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  background-image: url("tennislawn.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin:0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+
+.formreg input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.formreg button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.formreg button:hover,.form button:active,.form button:focus {
+  background: #43A047;
+}
+.formreg .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.formreg .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #43A047;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+
+#rcorners2 {
+  border-radius: 15px;
+  border: 2px solid #73AD21;
+  width: 200px;
+  height: 180px;
+  text-align: center;
+  margin-top: 2em;
+}
+
+#rcorners1 {
+  border-radius: 10px;
+  border: 2px solid #73AD21;
+  padding: 10px; 
+  width: 80px;
+  font-size: 10px;
+  height: 50px; 
+  width: 70px;
+  color: white;
+  margin-left: 1.5em;
+}
+
+#rcorners3 {
+  border-radius: 50px;
+  border: 2px solid #73AD21;
+  padding: 20px; 
+  width: 130px;
+  height: 100px; 
+}
+
+.memberres{
+  text-align: center;
+  height: 150px;
+  width:140px;
+}
+
+.memberres2{
+
+  width: 1000px;;
+}
+.reservecard{
+  border-radius: 30px;
+  border: 2px solid #73AD21;
+  padding: 10px; 
+  font-size: 20px;
+}
+
+.courtcard{
+width: 200px;
+}
+
+#white{
+
+  color:white;
+}

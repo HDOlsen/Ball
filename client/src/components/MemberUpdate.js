@@ -104,7 +104,7 @@ export default class MemberUpdate extends Component {
               <input className="form-control" onChange={this.handleTextChange} type="url" name="photo" placeholder="Upload file"></input>
             </div>
               <div>
-              <button className='btn btn-primary' onClick= {() => this.onEditMember(this.state.member.id)}><Link to = {'/'}>Update</Link></button>
+              <button className='btn btn-success' id="rcorners1" onClick= {() => this.onEditMember(this.state.member.id)}><Link id="white" to = {'/'}>Update</Link></button>
               </div>
     </div>
 </div>
